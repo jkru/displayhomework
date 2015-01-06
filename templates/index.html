@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<style>
+</style>
+{% endblock %}
+
+{% block body %}
+
+<div id="math">
+  <h1><a href='https://sites.google.com/a/kealing.org/ms-girardeau-sixth-grade-math/homework-assignments'>Math</a></h1>
+
+  <a href='{{math_link}}'>Latest Math Assignment</a>
+</div>
+
+<div id="english">
+  <h1><a href='http://stewartkealing.weebly.com/magnet-6th-grade-english.html'>English</a></h1>
+
+  {% for eng_line in english_info %}
+    <p>{{eng_line}}</p>
+  {% endfor %}
+</div>
+<div id="science">
+    <h1><a href='https://sites.google.com/a/austinisd.org/mcdonald-6th-grade-science/home/science-assignments'>Science</a></h1>
+
+  {% for sci_line in science_info %}
+    <p>{{sci_line}}</p>
+  {% endfor %}
+</div>
+
+<div id="world">
+  <h1><a href='https://sites.google.com/a/austinisd.org/mr-shoaf-s-classroom/world-cultures'>World Cultures</a></h1>
+
+</div>
+{% endblock %}
+

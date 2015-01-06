@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<style>
+</style>
+{% endblock %}
+
+{% block body %}
+<h1>{{blah}}</h1>
+<div id="math">
+  <h1>Math</h1>
+  <a href='{{math_link}}'>Latest Math Assignment</a>
+</div>
+
+<div id="english">
+  <h1>English</h1>
+  <p>{{english_info}}
+  </p>
+</div>
+<div id="science">
+    <h1>Science</h1>
+  <p>{{science_info}}
+  </p>
+</div>
+
+{% endblock %}
+
