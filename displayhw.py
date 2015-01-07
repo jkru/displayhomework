@@ -21,6 +21,7 @@ def home():
     english_info = gethw.get_english(english)
 
     english_info = english_info.replace(u"&rsquo;","'").replace(u"&ldquo;","'").replace(u"&rdquo;","'")
+    english_info = english_info.replace(u"&ndash;","-")
     english_info = english_info.split("&nbsp;")
     science_info = gethw.get_science(science).split("\n")
 
